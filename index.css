@@ -62,3 +62,84 @@ body {
     line-height: 79.69px;
     color: #252525;
 }
+
+.section-2 {
+    display: flex;
+    justify-content: end;
+    margin-top: 100px;
+}
+
+.rock-paper-scissors-images-container {
+    display: flex;
+    justify-content: center;
+    width: 60vw;
+    padding-left: 100px;
+}
+
+.rock-paper-scissors-images{
+    padding-left: 15vw;
+}
+
+.rules-container {
+    position: relative;
+    width: 25vw;
+}
+
+.rules {
+    width: 278px;
+    background-color: #004429;
+    border: 7px solid white;
+    border-radius: 13px;
+    color: white;
+    margin-top: 50px;
+}
+
+.rules-heading {
+    text-align: center;
+    margin: 20px;
+    font-size: 500;
+    font-size: 29px;
+    line-height: 33.98px;
+}
+
+.rules-content {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15.23px;
+    margin: 10px;
+    padding-bottom: 10px;
+}
+
+.rules-content ul {
+    list-style-type: square;
+}
+
+.rules-content li {
+    margin-bottom: 10px;
+}
+
+.rules-content li::marker {
+    color: #FFD600;
+}
+
+.close-symbol-container {
+    position: absolute;
+    top: 20px;
+    left: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 30px;
+    border: 5px solid white;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: red;
+}
+
+.close-symbol {
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 79.49px;
+    color: white;
+}
