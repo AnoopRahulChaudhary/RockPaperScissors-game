@@ -143,3 +143,20 @@ body {
     line-height: 79.49px;
     color: white;
 }
+
+.section-3 {
+    display: flex;
+    justify-content: end;
+    margin-right: 50px;
+}
+
+.rules-button {
+    color: #FFFFFF;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 21px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
