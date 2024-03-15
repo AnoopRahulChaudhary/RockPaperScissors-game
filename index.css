@@ -148,6 +148,7 @@ body {
     display: flex;
     justify-content: end;
     margin-right: 50px;
+    margin-top: 20px;
 }
 
 .rules-button {
