@@ -1,0 +1,77 @@
+.game-status-container {
+    width: 55vw;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.picked-text {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 19.92px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.picked-img-container {
+    width: 120px;
+    height: 120px;
+    background-color: white;
+    border: 16px solid;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.human-picked-status .picked-img-container {
+    border-color: #BD00FF;
+}
+
+.computer-picked-status .picked-img-container {
+    border-color: #FFA943;
+}
+
+.message-and-play-again-container{
+    margin-top: 100px;
+}
+
+.message {
+    color: white;
+    font-weight: 800;
+}
+
+.message-line-1 {
+    font-size: 39px;
+    line-height: 45.7px;
+}
+
+.message-line-2 {
+    font-size: 25px;
+    line-height: 29.3px;
+}
+
+.play-again-container {
+    background-color: white;
+    border-radius: 9px;
+    margin-top: 20px;
+    padding: 7px 10px;
+}
+
+.play-again-button {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 17.58px;
+    color: #6B6B6B;
+}
+
+.rules-container {
+    visibility: hidden;
+}
+
+.win-shadow {
+    box-shadow:
+                0 0 0 35px rgb(0, 128, 0, 0.39),
+                0 0 0 60px rgb(0, 128, 0, 0.30),
+                0 0 0 86px rgb(0, 128, 0, 0.20);
+}

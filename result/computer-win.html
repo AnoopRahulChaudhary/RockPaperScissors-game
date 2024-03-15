@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Rock-Paper-Scissors-Game</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+
+        <link href="../index.css" rel="stylesheet">
+        <link href="./human-win.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="game-container">
+
+            <div class="section-1">
+                <div class="score-container">
+                    <div class="game-name-text">
+                        <div>ROCK</div>
+                        <div>PAPER</div>
+                        <div>SCISSORS</div>
+                    </div>
+                    <div class="computer-score score-view">
+                        <div class="score-heading">
+                            <div class="score-heading-first-line">COMPUTER</div>
+                            <div class="score-heading-second-line">SCORE</div>
+                        </div>
+                        <div class="score">
+                            <span class="score">0</span>
+                        </div>
+                    </div>
+                    <div class="your-score score-view">
+                        <div class="score-heading">
+                            <div class="score-heading-first-line">YOUR</div>
+                            <div class="score-heading-second-line">SCORE</div>
+                        </div>
+                        <div class="score">
+                            <span>0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-2">
+                <div class="game-status-container">
+                    <div class="human-picked-status">
+                        <div class="picked-text">
+                            YOU PICKED
+                        </div>
+                        <div class="picked-img-container">
+                            <img src="../assets/images/scissors.png" alt="scissors image">
+                        </div>
+                    </div>
+                    <div class="message-and-play-again-container">
+                        <div class="message">
+                            <div class="message-line-1">YOU LOST</div>
+                            <div class="message-line-2">AGAINST PC</div>
+                        </div>
+                        <div class="play-again-container">
+                            <div class="play-again-button">PLAY AGAIN</div>
+                        </div>
+                    </div>
+                    <div class="computer-picked-status">
+                        <div class="picked-text">
+                            PC PICKED
+                        </div>
+                        <div class="picked-img-container win-shadow">
+                            <img src="../assets/images/paper.png" alt="paper image">
+                        </div>
+                    </div>
+                </div>
+                <div class="rules-container">
+                    <div class="rules">
+                        <div class="rules-heading">
+                            Game Rules
+                        </div>
+                        <div class="rules-content">
+                            <ul>
+                                <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+                                <li>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li>
+                                <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+                                <li>If both players lay down the same hand, each player lays down another hand</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="close-symbol-container">
+                        <div class="close-symbol">X</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-3">
+                <div class="rules-button">
+                    RULES
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
