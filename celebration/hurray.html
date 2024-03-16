@@ -27,7 +27,7 @@
                 <div class="play-again-button">PLAY AGAIN</div>
             </div>
         </div>
-        <div class="rules-container">
+        <div class="rules-container close-rules">
             <div class="rules">
                 <div class="rules-heading">
                     Game Rules
@@ -52,11 +52,16 @@
         </div>
     </div>
 
-    <script>
+    <script type="module">
+        import {addShowRulesListener, addCloseRulesListener} from '../rules.js';
+
         document.querySelector('.play-again-button')
             .addEventListener('click', function() {
                 window.location.href = '../index.html';
             });
+        
+        addShowRulesListener();
+        addCloseRulesListener();
     </script>
 </body>
 </html>

@@ -87,6 +87,7 @@
         <script type="module">
             import {loadComputerScore, loadUserScore} from './loadScoreOnScreen.js';
             import {showGameResultAndUpdateScore} from './index.js';
+            import {addShowRulesListener, addCloseRulesListener} from './rules.js';
 
             loadComputerScore();
             loadUserScore();
@@ -105,6 +106,9 @@
             paper.addEventListener('click', function() {
                 showGameResultAndUpdateScore('paper');
             });
+
+            addShowRulesListener();
+            addCloseRulesListener();
         </script>
     </body>
 </html>

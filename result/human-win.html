@@ -69,7 +69,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="rules-container">
+                <div class="rules-container close-rules">
                     <div class="rules">
                         <div class="rules-heading">
                             Game Rules
@@ -102,11 +102,15 @@
         <script type="module">
             import {loadComputerScore, loadUserScore} from '../loadScoreOnScreen.js';
             import {addPlayAgainListener} from './replay.js'
+            import {addShowRulesListener, addCloseRulesListener} from '../rules.js';
 
             loadComputerScore();
             loadUserScore();
 
             addPlayAgainListener();
+
+            addShowRulesListener();
+            addCloseRulesListener();
         </script>
     </body>
 </html>
