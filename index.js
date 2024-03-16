@@ -1,7 +1,10 @@
-function showGameResult(usersPic){
+import {updateScore} from './score.js';
+
+export function showGameResultAndUpdateScore(usersPic){
     const userSelection = usersPic;
     const computerSelection = getComputerSelection();
     const result = getGameResult(userSelection, computerSelection);
+    updateScore(result);
     redirectToResultPage(result);
 }
 
