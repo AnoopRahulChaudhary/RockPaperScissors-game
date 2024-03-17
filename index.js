@@ -1,11 +1,12 @@
 import {updateScore} from './score.js';
+import {keyForUserImageSelection, keyForComputerImageSelection} from './result/updatePickedImages.js'
 
 export function showGameResultAndUpdateScore(usersPic){
     const userSelection = usersPic;
     const computerSelection = getComputerSelection();
     const result = getGameResult(userSelection, computerSelection);
     updateScore(result);
-    redirectToResultPage(result);
+    redirectToResultPage(result, userSelection, computerSelection);
 }
 
 function getComputerSelection() {
@@ -49,7 +50,7 @@ function getGameResult(userSelection, computerSelection) {
     }
 }
 
-function redirectToResultPage(result) {
+function redirectToResultPage(result, userSelection, computerSelection) {
     let pageLink;
     switch(result) {
         case 'user-won':
@@ -64,5 +65,17 @@ function redirectToResultPage(result) {
         default : console.log('Unknown winner - '+ result);
     }
 
-    window.location.href = pageLink;
+    const pageLinkWithParams = updateLinkWithSelectionParam(pageLink, userSelection, computerSelection);
+    window.location.href = pageLinkWithParams;
+}
+
+function updateLinkWithSelectionParam(pageLink, userSelection, computerSelection) {
+    return pageLink + '?' +
+            prepareQueryParameter(keyForUserImageSelection, userSelection) +
+            '&' +
+            prepareQueryParameter(keyForComputerImageSelection, computerSelection);
+}
+
+function prepareQueryParameter(key, value) {
+    return key + '=' + value;
 }

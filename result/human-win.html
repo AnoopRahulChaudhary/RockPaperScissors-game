@@ -103,6 +103,7 @@
             import {loadComputerScore, loadUserScore} from '../loadScoreOnScreen.js';
             import {addPlayAgainListener} from './replay.js'
             import {addShowRulesListener, addCloseRulesListener} from '../rules.js';
+            import {updatePickedImages} from './updatePickedImages.js'
 
             loadComputerScore();
             loadUserScore();
@@ -117,6 +118,8 @@
             }
             document.querySelector('.next-button')
                 .addEventListener('click', showHurraypage);
+            
+            updatePickedImages();
         </script>
     </body>
 </html>

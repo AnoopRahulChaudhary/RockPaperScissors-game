@@ -99,6 +99,7 @@
             import {loadComputerScore, loadUserScore} from '../loadScoreOnScreen.js';
             import {addPlayAgainListener} from './replay.js'
             import {addShowRulesListener, addCloseRulesListener} from '../rules.js';
+            import {updatePickedImages} from './updatePickedImages.js'
 
             loadComputerScore();
             loadUserScore();
@@ -107,6 +108,8 @@
 
             addShowRulesListener();
             addCloseRulesListener();
+
+            updatePickedImages();
         </script>
     </body>
 </html>
