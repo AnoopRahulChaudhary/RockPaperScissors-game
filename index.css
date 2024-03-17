@@ -140,6 +140,7 @@ body {
 .close-symbol {
     font-weight: 400;
     font-size: 44px;
+    font-family: "Dangrek", sans-serif;
     line-height: 79.49px;
     color: white;
 }
