@@ -1,0 +1,29 @@
+.picked-img-container {
+    width: 120px;
+    height: 120px;
+    background-color: white;
+    border: 16px solid;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rock-border-color {
+    border-color: #0074B6;
+}
+
+.scissors-border-color {
+    border-color: #BD00FF;
+}
+
+.paper-border-color {
+    border-color: #FFA943;
+}
+
+.win-shadow {
+    box-shadow:
+                0 0 0 35px rgb(0, 128, 0, 0.39),
+                0 0 0 60px rgb(0, 128, 0, 0.30),
+                0 0 0 86px rgb(0, 128, 0, 0.20);
+}

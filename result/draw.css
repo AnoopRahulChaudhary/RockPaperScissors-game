@@ -13,25 +13,6 @@
     margin-bottom: 30px;
 }
 
-.picked-img-container {
-    width: 120px;
-    height: 120px;
-    background-color: white;
-    border: 16px solid;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.human-picked-status .picked-img-container {
-    border-color: #BD00FF;
-}
-
-.computer-picked-status .picked-img-container {
-    border-color: #FFA943;
-}
-
 .message-and-play-again-container{
     margin-top: 100px;
 }
@@ -75,11 +56,4 @@
     padding-left: 20px;
     padding-right: 20px;
     margin-left: 20px;
-}
-
-.win-shadow {
-    box-shadow:
-                0 0 0 35px rgb(0, 128, 0, 0.39),
-                0 0 0 60px rgb(0, 128, 0, 0.30),
-                0 0 0 86px rgb(0, 128, 0, 0.20);
 }

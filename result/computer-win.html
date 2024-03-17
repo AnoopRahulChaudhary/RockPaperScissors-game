@@ -8,6 +8,7 @@
 
         <link href="../index.css" rel="stylesheet">
         <link href="./computer-win.css" rel="stylesheet">
+        <link href="./picked-image.css" rel="stylesheet">
     </head>
 
     <body>
@@ -47,7 +48,7 @@
                         <div class="picked-text">
                             YOU PICKED
                         </div>
-                        <div class="picked-img-container">
+                        <div class="picked-img-container paper-border-color">
                             <img src="../assets/images/paper.png" alt="paper image">
                         </div>
                     </div>
@@ -64,7 +65,7 @@
                         <div class="picked-text">
                             PC PICKED
                         </div>
-                        <div class="picked-img-container win-shadow">
+                        <div class="picked-img-container scissors-border-color win-shadow">
                             <img src="../assets/images/scissors.png" alt="scissors image">
                         </div>
                     </div>
@@ -111,6 +112,9 @@
             addCloseRulesListener();
 
             updatePickedImages();
+            document.querySelector('computer-picked-status picked-img-container')
+                .classList()
+                .add('win-shadow');
         </script>
     </body>
 </html>
