@@ -4,5 +4,5 @@ export function addPlayAgainListener() {
 }
 
 function playAgain() {
-    window.location.href = '../index.html';
+    window.location.href = '../../public/index.html';
 }

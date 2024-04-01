@@ -30,7 +30,7 @@ function getPageUrl() {
 }
 
 function getImagePath(imageValue) {
-    return '../assets/images/'+imageValue+'.png';
+    return '../../assets/images/'+imageValue+'.png';
 }
 
 function updateCssForUserPickedImage(imageValue) {

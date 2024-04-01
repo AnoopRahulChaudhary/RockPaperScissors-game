@@ -8,8 +8,8 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dangrek">
 
-        <link href="../index.css" rel="stylesheet">
-        <link href="./human-win.css" rel="stylesheet">
+        <link href="../../src/index.css" rel="stylesheet">
+        <link href="./draw.css" rel="stylesheet">
         <link href="./picked-image.css" rel="stylesheet">
     </head>
 
@@ -50,25 +50,24 @@
                         <div class="picked-text">
                             YOU PICKED
                         </div>
-                        <div class="picked-img-container scissors-border-color win-shadow">
-                            <img src="../assets/images/scissors.png" alt="scissors image">
+                        <div class="picked-img-container rock-border-color">
+                            <img src="../../assets/images/rock.png" alt="rock image">
                         </div>
                     </div>
                     <div class="message-and-play-again-container">
                         <div class="message">
-                            <div class="message-line-1">YOU WIN</div>
-                            <div class="message-line-2">AGAINST PC</div>
+                            <div class="message-line-1">TIE UP</div>
                         </div>
                         <div class="play-again-container">
-                            <div class="play-again-button">PLAY AGAIN</div>
+                            <div class="play-again-button">REPLAY</div>
                         </div>
                     </div>
                     <div class="computer-picked-status">
                         <div class="picked-text">
                             PC PICKED
                         </div>
-                        <div class="picked-img-container paper-border-color">
-                            <img src="../assets/images/paper.png" alt="paper image">
+                        <div class="picked-img-container rock-border-color">
+                            <img src="../../assets/images/rock.png" alt="rock image">
                         </div>
                     </div>
                 </div>
@@ -96,9 +95,6 @@
                 <div class="rules-button">
                     RULES
                 </div>
-                <div class="next-button">
-                    NEXT
-                </div>
             </div>
         </div>
 
@@ -116,15 +112,7 @@
             addShowRulesListener();
             addCloseRulesListener();
 
-            function showHurraypage() {
-                window.location.href = '../celebration/hurray.html';
-            }
-            document.querySelector('.next-button')
-                .addEventListener('click', showHurraypage);
-            
             updatePickedImages();
-            document.querySelector('.human-picked-status .picked-img-container')
-                .classList.add('win-shadow');
         </script>
     </body>
 </html>
