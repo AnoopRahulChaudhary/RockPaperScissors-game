@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dangrek">
 
-        <link href="../src/index.css" rel="stylesheet">
+        <link href="./src/index.css" rel="stylesheet">
     </head>
 
     <body>
@@ -49,13 +49,13 @@
                             <polygon points="100,100 400,100 250,400" stroke="black" fill="none" stroke-width="15"></polygon>
             
                             <circle cx="100" cy="100" r="70" fill="white" stroke="#0074B6" stroke-width="16"></circle>
-                            <image id="rock" href="../assets/images/rock.png" x="50" y="50" width="100" height="100"/>
+                            <image id="rock" href="./assets/images/rock.png" x="50" y="50" width="100" height="100"/>
             
                             <circle cx="400" cy="100" r="70" fill="white" stroke="#BD00FF" stroke-width="16"></circle>
-                            <image id="scissors" href="../assets/images/scissors.png" x="355" y="50" width="100" height="100"/>
+                            <image id="scissors" href="./assets/images/scissors.png" x="355" y="50" width="100" height="100"/>
                             
                             <circle cx="250" cy="400" r="70" fill="white" stroke="#FFA943" stroke-width="16"></circle>
-                            <image id="paper" href="../assets/images/paper.png" x="200" y="350" width="100" height="100"/>
+                            <image id="paper" href="./assets/images/paper.png" x="200" y="350" width="100" height="100"/>
                         </svg>
                     </div>
                 </div>
@@ -87,9 +87,9 @@
         </div>
 
         <script type="module">
-            import {loadComputerScore, loadUserScore} from '../src/loadScoreOnScreen.js';
-            import {showGameResultAndUpdateScore} from '../src/index.js';
-            import {addShowRulesListener, addCloseRulesListener} from '../src/rules.js';
+            import {loadComputerScore, loadUserScore} from './src/loadScoreOnScreen.js';
+            import {showGameResultAndUpdateScore} from './src/index.js';
+            import {addShowRulesListener, addCloseRulesListener} from './src/rules.js';
 
             loadComputerScore();
             loadUserScore();

@@ -54,13 +54,13 @@ function redirectToResultPage(result, userSelection, computerSelection) {
     let pageLink;
     switch(result) {
         case 'user-won':
-            pageLink = "../src/result/human-win.html";
+            pageLink = "./src/result/human-win.html";
             break;
         case 'computer-won':
-            pageLink = "../src/result/computer-win.html";
+            pageLink = "./src/result/computer-win.html";
             break;
         case 'draw':
-            pageLink = "../src/result/draw.html";
+            pageLink = "./src/result/draw.html";
             break;
         default : console.log('Unknown winner - '+ result);
     }
